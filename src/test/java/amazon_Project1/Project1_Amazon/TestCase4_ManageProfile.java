@@ -2,13 +2,14 @@ package amazon_Project1.Project1_Amazon;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.Listeners;
 //Check if a user can successfully edit their profile information.
 import org.testng.annotations.Test;
-
+@Listeners(value = TestListener.class)
 public class TestCase4_ManageProfile extends LoginQuit
 {
 		@Test(retryAnalyzer=RetryTests.class)
-		public void validcredential() throws InterruptedException, EncryptedDocumentException, IOException
+		public void manageprofile() throws InterruptedException, EncryptedDocumentException, IOException
 		{
 			HomePage homepage=new HomePage(driver);
 			homepage.accountandlist(driver);

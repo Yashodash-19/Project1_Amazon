@@ -30,15 +30,17 @@ WebDriver driver;
 	WebElement signin_button;
 	
 	//step 2
-	public void un() throws EncryptedDocumentException, IOException
+	public void un() throws EncryptedDocumentException, IOException, InterruptedException
 	{
+		
 		FileInputStream f1=new FileInputStream("C:\\Users\\yasho\\eclipse-workspace\\Project1_Amazon\\DDT\\Yashoda.xlsx");
 		      Workbook w1=  WorkbookFactory.create(f1);
 		     String un=w1.getSheet("logindetails").getRow(1).getCell(0).getStringCellValue();
 		      username.sendKeys(un);
 	}
-	public void un1() throws EncryptedDocumentException, IOException
+	public void un1() throws EncryptedDocumentException, IOException, InterruptedException
 	{
+		
 		FileInputStream f1=new FileInputStream("C:\\Users\\yasho\\eclipse-workspace\\Project1_Amazon\\DDT\\Yashoda.xlsx");
 	      Workbook w1=  WorkbookFactory.create(f1);
 	     String un1=w1.getSheet("logindetails").getRow(2).getCell(0).getStringCellValue();

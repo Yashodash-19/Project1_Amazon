@@ -4,21 +4,49 @@
   <listeners>
     <listener class-name="amazon_Project1.Project1_Amazon.TestListener"/>
   </listeners>
-  <test thread-count="5" name="Testchrome(failed)" verbose="0">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Testfirefox(failed)" verbose="0">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="amazon_Project1.Project1_Amazon.TestCase12_Payment">
         <methods>
           <include name="payment"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase12_Payment -->
+      <class name="amazon_Project1.Project1_Amazon.TestCase10_Updatingproductandremove">
+        <methods>
+          <include name="addtocart_logout"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase10_Updatingproductandremove -->
+      <class name="amazon_Project1.Project1_Amazon.TestCase7_Verifythedetails">
+        <methods>
+          <include name="prodcutdetailpage"/>
           <include name="launch"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- amazon_Project1.Project1_Amazon.TestCase12_Payment -->
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase7_Verifythedetails -->
+      <class name="amazon_Project1.Project1_Amazon.TestCase5_Searchproduct">
+        <methods>
+          <include name="search_product"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase5_Searchproduct -->
+      <class name="amazon_Project1.Project1_Amazon.TestCase3_Invalicredentials">
+        <methods>
+          <include name="Invalidcredential"/>
+          <include name="launch"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase3_Invalicredentials -->
       <class name="amazon_Project1.Project1_Amazon.TestCase8_SortProduct">
         <methods>
           <include name="SortProduct"/>
-          <include name="quit"/>
           <include name="launch"/>
+          <include name="quit"/>
         </methods>
       </class> <!-- amazon_Project1.Project1_Amazon.TestCase8_SortProduct -->
       <class name="amazon_Project1.Project1_Amazon.TestCase4_ManageProfile">
@@ -28,25 +56,27 @@
           <include name="validcredential"/>
         </methods>
       </class> <!-- amazon_Project1.Project1_Amazon.TestCase4_ManageProfile -->
-    </classes>
-  </test> <!-- Testchrome(failed) -->
-  <test thread-count="5" name="Testedge(failed)" verbose="0">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="amazon_Project1.Project1_Amazon.TestCase12_Payment">
+      <class name="amazon_Project1.Project1_Amazon.TestCase11_CheckoutProcess">
         <methods>
-          <include name="payment"/>
-          <include name="launch"/>
           <include name="quit"/>
+          <include name="launch"/>
+          <include name="login_cart_logout1"/>
         </methods>
-      </class> <!-- amazon_Project1.Project1_Amazon.TestCase12_Payment -->
-      <class name="amazon_Project1.Project1_Amazon.TestCase4_ManageProfile">
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase11_CheckoutProcess -->
+      <class name="amazon_Project1.Project1_Amazon.TestCase6_searchwithfilters">
         <methods>
-          <include name="launch"/>
+          <include name="search_product"/>
           <include name="quit"/>
-          <include name="validcredential"/>
+          <include name="launch"/>
         </methods>
-      </class> <!-- amazon_Project1.Project1_Amazon.TestCase4_ManageProfile -->
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase6_searchwithfilters -->
+      <class name="amazon_Project1.Project1_Amazon.TestCase14_ratings">
+        <methods>
+          <include name="quit"/>
+          <include name="launch"/>
+          <include name="orderandreturn"/>
+        </methods>
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase14_ratings -->
     </classes>
-  </test> <!-- Testedge(failed) -->
+  </test> <!-- Testfirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="amazon_Project1.Project1_Amazon.TestCase13_Cupon">
+      <class name="amazon_Project1.Project1_Amazon.TestCase4_ManageProfile">
         <methods>
-          <include name="couponcode"/>
+          <include name="manageprofile"/>
           <include name="launch"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- amazon_Project1.Project1_Amazon.TestCase13_Cupon -->
+      </class> <!-- amazon_Project1.Project1_Amazon.TestCase4_ManageProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,8 +21,8 @@
     </classes>
   </test> <!-- Test -->
   
-   <test thread-count="5" name="Testedge">
-  <parameter name="browser" value="edge"></parameter>
+   <test thread-count="5" name="Testfirefox">
+  <parameter name="browser" value="firefox"></parameter>
     <classes>
       <class name="amazon_Project1.Project1_Amazon.TestCase9_AddtoCart"/>
       <class name="amazon_Project1.Project1_Amazon.TestCase15_cartpagewithoutlogin"/>

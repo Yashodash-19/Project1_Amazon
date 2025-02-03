@@ -47,6 +47,8 @@ WebDriverWait w1=new WebDriverWait(driver, Duration.ofSeconds(30));
 	public void accountandlist(WebDriver driver) throws InterruptedException
 	{
 		
+		Thread.sleep(3000);
+		
 	Actions a1=new Actions(driver);
 	a1.moveToElement(accountandlist_hoverover).perform();	
 	//Starthere_button.click();
@@ -78,6 +80,7 @@ WebDriverWait w1=new WebDriverWait(driver, Duration.ofSeconds(30));
 		//Thread.sleep(3000);
 		w1.until(ExpectedConditions.visibilityOf(manageprofiles_button));
 		manageprofiles_button.click();
+		Thread.sleep(3000);
 		w1.until(ExpectedConditions.visibilityOf(view_button));
 		view_button.click();
 	}
